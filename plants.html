@@ -11,7 +11,24 @@
 </head>
 <body>
 
-      <h1>Plants by Saisumithra Jagarlamudi</h1>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="plants.html">Happy Plants</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsingNavBar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-link active">
+          <a class="nav-link" href="Cat.html">Cat Page</a>
+        </li>
+        <li class="nav-link active">
+          <a class="nav-link" href="Dog.html">Dog Page</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+
+    <h1>Plants by Saisumithra Jagarlamudi</h1>
 
       <div class = "container">
           
@@ -33,8 +50,158 @@
            <div class = "col-md">Iris</div>
         </div>  
       </div><br>
+      
       <p>Plant name row breaks first when we reduce the screen size beacuse 
          the size of plant name div of class "col-md" is greater than that of 
          size of letter div of class "col-sm-2".</p>
+
+      <div class = "container">
+        <img src = "africandaisy.jpg" class ="img-fluid" alt="Africandaisy" width="400px" height="500px">
+        <img src = "ladypalm.jpg" class ="img-fluid" alt="Ladypalm" width="400px" height="500px">
+        <img src = "marlberry.jpg" class ="img-fluid" alt="Marlberry" width="400px" height="500px">
+      </div>
+
+      <div class = "container">
+        <img class = "img-thumbnail" src="ladypalm.jpg" alt="Ladypalm" width="150px">
+        <img class = "img-thumbnail" src="africandaisy.jpg" alt="Africandaisy" width="150px">
+        <img class = "img-thumbnail" src="marlberry.jpg" alt="Marlberry" width="150px">
+      </div>
+
+      <br>
+
+      <table class = "table" table-striped table-bordered table-dark table-hover>
+        <caption>Table contains Plants, City and Food</caption>
+        <thead class = "thead-dark thead-danger">
+          <tr>
+            <th scope="col">Letter</th>
+            <th scope="col">plant</th>
+            <th scope="col">City</th>
+            <th scope="col">Food</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class = "table-primary">
+            <td>L</td>
+            <td>Ladypalm</td>
+            <td>La Belle</td>
+            <td>Leek</td>
+          </tr>
+          <tr class = "table-secondary">
+            <td>A</td>
+            <td>AfricanDaisy</td>
+            <td>Albany</td>
+            <td>Almonds</td>
+          </tr>
+          <tr class = "table-success">
+            <td>M</td>
+            <td>Marlberry</td>
+            <td>Missouri</td>
+            <td>Millet</td>
+          </tr>
+          <tr class = "table-danger">
+            <td>U</td>
+            <td>Umbrellapine</td>
+            <td>Urbana</td>
+            <td>Udon</td>
+          </tr>
+          <tr class = "table-warning">
+            <td>D</td>
+            <td>Dahlia</td>
+            <td>Daleville</td>
+            <td>Dasheen</td>
+          </tr>
+          <tr class = "table-info">
+            <td>I</td>
+            <td>Iris</td>
+            <td>Islip</td>
+            <td>IceCream</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+
+        <button type = "button" class="btn">L</button>
+        <button type = "button" class="btn">A</button>
+        <button type = "button" class="btn">M</button>
+        <button type = "button" class="btn">U</button>
+        <button type = "button" class="btn">D</button>
+        <button type = "button" class="btn">I</button>
+      <div class="btn-toolbar" role="toolbar" aria-label="Letters with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="Success">
+          <button type="button" class="btn btn-success">L</button>
+          <button type="button" class="btn btn-success">A</button>
+          <button type="button" class="btn btn-success">M</button>
+        </div>
+
+        <div class="btn-group mr-2" role="group" aria-label="Alert">
+          <button type="button" class="btn btn-warning">U</button>
+          <button type="button" class="btn btn-warning">D</button>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Danger">
+          <button type="button" class="btn btn-danger">I</button>
+        </div>
+      </div>
+      
+      <br>
+
+      <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Pages
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="Cat.html">Cat Page</a>
+        <a class="dropdown-item" href="Dog.html">Dog Page</a>
+      </div>
+      </div>
+
+      <br>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Plant</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Plant">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <br>
+       
+      <div class = "card-group">
+      <div class="card">
+        <img class="card-img-top" src="ladypalm.jpg" alt="Ladypalm" height="400px" width="400px">
+        <div class="card-body">
+          <h4 class="card-title">LADYPALM</h4>
+          <p class="card-text">The lady palm is a small palm species that grows in dense clumps of slender upright green stems.</p>
+          <a href="https://www.thespruce.com/growing-rhapis-excelsa-palms-1902881" class="btn btn-primary">For More Information</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="marlberry.jpg" alt="Marlberry" height="400px" width="400px">
+        <div class="card-body">
+          <h4 class="card-title">MARLBERRY</h4>
+          <p class="card-text">Marlberry is an evergreenshrub or tree that occurs naturally in coastal strands and hammocks and pine rocklands throughout Central and South Florida.</p>
+          <a href="https://flawildflowers.org/flower-friday-ardisia-escallonioides/" class="btn btn-primary">For More Information</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="africandaisy.jpg" alt="AfricanDaisy" height="400px" width="400px">
+        <div class="card-body">
+          <h4 class="card-title">AFRICANDAISY</h4>
+          <p class="card-text">African daisies look a lot like common daisies, with petals radiating around a center disk.</p>
+          <a href="https://www.thespruce.com/growing-and-caring-for-african-daisies-1402912" class="btn btn-primary">For More Information</a>
+        </div>
+      </div>
+      </div>
 </body>
 </html>
